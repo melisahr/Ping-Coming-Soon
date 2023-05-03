@@ -1,0 +1,101 @@
+/*Libre Franklin Font*/
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Blue: hsl(223, 87%, 63%);
+
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+body{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    min-height: 100%;
+}
+header{
+    padding-top: 5rem;
+}
+.content{
+    margin: 2rem 0;
+}
+.content h1{
+    color: var(--Gray);
+    font-size: 2.4em;
+    font-weight: 300;
+}
+.content span{
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+.content p{
+    padding: 1rem 0;
+    font-weight: 300;
+}
+form{
+    padding: 1rem 0;
+    
+}
+input{  
+    width: 400px;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: 1px var(--Pale-Blue) solid;
+    margin-right: 1rem;
+    outline: none;
+}
+input::placeholder{
+    color: var(--Gray);
+}
+button{
+   background-color: var(--Blue);
+   color: #fff;
+   border-radius: 5rem;
+   padding: 1rem 3rem;
+   border: none;
+   box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+}
+button:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+.dashboard img{
+   width: 45vw;
+}
+footer{
+    padding: 3rem;
+}
+.icons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--Blue);
+}
+.icons p{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 5rem;
+    padding: 0.4rem 0.5rem;
+}
+.icons p:hover{
+    background-color: var(--Blue);
+    color: #fff;
+    cursor: pointer;
+}
+.rights{
+    color: var(--Gray);
+    font-weight: 300;
+    font-size: 1rem;
+}
+@media (min-width:768px){
+
+}
