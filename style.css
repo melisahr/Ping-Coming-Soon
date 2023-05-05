@@ -1,7 +1,7 @@
 /*Libre Franklin Font*/
   @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body{
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
     text-align: center;
-    min-height: 100%;
+    min-height: 100vh;
 }
 header{
     padding-top: 5rem;
@@ -42,7 +42,6 @@ header{
 }
 form{
     padding: 1rem 0;
-    
 }
 input{  
     width: 400px;
@@ -53,7 +52,7 @@ input{
     outline: none;
 }
 input::placeholder{
-    color: var(--Gray);
+    color: var(--Pale-Blue);
 }
 button{
    background-color: var(--Blue);
@@ -65,10 +64,10 @@ button{
 }
 button:hover{
     cursor: pointer;
-    opacity: 90%;
+    opacity: 0.8;
 }
 .dashboard img{
-   width: 45vw;
+   width: 600px;
 }
 footer{
     padding: 3rem;
@@ -96,6 +95,31 @@ footer{
     font-weight: 300;
     font-size: 1rem;
 }
-@media (min-width:768px){
-
+@media only screen and (max-width:768px) {
+    body{
+        margin: 0 2rem;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+    .content p{
+        font-size: 0.9rem;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    button{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .dashboard img{
+        width: 100%;
+    }
+    footer{
+        margin-top: 1rem;
+    }
+    .rights{
+        font-size: 0.9rem;
+    }
 }
